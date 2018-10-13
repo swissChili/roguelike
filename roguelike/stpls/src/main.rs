@@ -4,6 +4,10 @@ use tcod::colors::{self, Color};
 use tcod::input::Key;
 use tcod::input::KeyCode::*;
 
+/*
+ * Some constants for different things
+ */
+
 const MAP_WIDTH: i32 = 80;
 const MAP_HEIGHT: i32 = 45;
 
@@ -56,6 +60,7 @@ fn make_map() -> Map {
 struct Tile {
     blocked: bool,
     block_sight: bool,
+    char: char,
 }
 
 impl Tile {
